@@ -1,0 +1,139 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+@include google-font("Roboto");
+@include google-font("Ubuntu");
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  color: $text-color;
+  font-family: $text-font;
+  background-color: $body-background-color1;
+  padding-top: 50px; 
+}
+
+.bg2 {
+  background-color: $body-background-color2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headline-color;
+  font-family: $headline-font;
+  text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+  color: $theme-color1;
+}
+
+p {
+  font-size: 20px;
+  font-family: $text-font;
+}
+
+.navbar {
+  background-color: $body-background-color1;
+}
+
+.nav-link, .navbar-brand {
+  text-decoration: none;
+  color: $link-color1;
+  &:hover {
+    color: $link-color2;
+  }
+}
+
+.navbar button {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+  font-size: 16px;
+}
+
+video{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+.welcometext {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $headline-font; 
+  color: $headline-color;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+}
+
+.welcomenamebig {
+  font-size: 8vw;
+  line-height: 7vw;
+}
+
+.welcomenamesmall {
+  font-size: 2vw;
+}
+
+.h2color {
+  color: $theme-color1;
+}
+
+.hbar {
+	border-bottom: 1px solid #333;
+  color: $theme-color1;
+	font-size: 30px;
+	line-height: 1em;
+	margin-bottom: 1.5em;
+}
+
+.hbar i,span {
+	position: relative;
+	top: 0.5em;
+}
+
+#contact {
+  background: $body-background-color1 url("/images/contactBG.png") no-repeat center top;
+  background-size: cover;
+}
+
+#footer {
+  color: darken($text-color, 35%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $body-background-color1;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#eucookielaw { 
+  z-index: 100; 
+  display: none; 
+  width: 100%; 
+  position: fixed; 
+  bottom: 0px; 
+  background: #000; 
+  border-top: 1px solid #666; 
+}
+
+#eucookielaw p { 
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+
+
+
