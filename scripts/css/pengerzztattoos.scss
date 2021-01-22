@@ -1,0 +1,129 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+@include google-font("Permanent Marker");
+@include google-font("Ubuntu");
+
+body {
+  color: $theme-color2;
+  background-color: $theme-color3;
+  font-family: $text-font;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $theme-color2;
+  font-family: $headline-font;
+  text-shadow: 0 0 3px $theme-color3;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0.2;
+}
+
+header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.title-hr hr {  
+  display: inline-block;
+  width: 30%;
+  margin: 5px 5px;
+  border: 5px solid $theme-color2;
+  border-radius: 5px;
+}
+
+.title-hr i {
+  color: $theme-color1;
+  font-size: 2.5rem;
+}
+
+#videos .video-container {
+  position: relative;
+  width:100%;
+}
+
+#videos .video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+#videos .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0px;
+  border: 1px solid $theme-color3;
+  border-radius: 10px;
+}
+
+.modal {
+  color: $theme-color3;
+}
+
+.page-link {
+  color: $theme-color1;
+  font-weight: bold;
+}
+
+.page-link:hover {
+  color: $theme-color3;
+}
+
+.page-item.active .page-link {
+  color: $theme-color2;
+  background-color: $theme-color1;
+  border-color: $theme-color1;  
+}
+
+#contact {
+  background: $theme-color3 url("/images/contactBG.png") no-repeat center top;
+  background-size: cover;
+}
+
+.contactwrap iframe {
+	border: 1px solid $theme-color3;
+  pointer-events: none;
+}
+
+.connect-hr hr {  
+  display: inline-block;
+  width: 25%;
+  margin: 5px 5px;
+  border: 3px solid $theme-color2;
+  border-radius: 3px;
+}
+
+.connect-hr i {
+  color: $theme-color1;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 0.8rem;
+}
