@@ -8,9 +8,9 @@
     <meta name="author" content="Andy Jacko">
     <title>David "Pengerzz" Jenkins | Tattooist In Manchester</title>
     <script src="https://kit.fontawesome.com/8692751f21.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">   
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="scripts/css/pengerzztattoos.css" type="text/css">
+    <link rel="stylesheet" href="/scripts/css/pengerzztattoos.css" type="text/css">
   </head>
 
   <body>
@@ -23,6 +23,5 @@
     <?php include("footer.php");?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>
